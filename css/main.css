@@ -1,0 +1,207 @@
+/* By As2web.fr */
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    max-width: 100%;
+    font-family: Arial;
+}
+
+.plateau {
+    width: 100%;
+    height: 100vh;
+    padding-right: 400px;
+    background-color: #27ae60;
+    box-sizing: border-box;
+}
+
+.player-list {
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    background-color: #2ecc71;
+    box-sizing: border-box;
+}
+
+.player-bloc {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.player-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.player-avatar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.player-presentation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.player-base-infos,
+.player-second-infos {
+    width: calc(100% - 60px - 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-second-infos {
+    width: calc(100% - 60px - 20%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    position: absolute;
+    right: calc(20% + 6px);
+    bottom: 5px;
+}
+
+.player-second-infos > div {
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.player-lvl {
+    width: 20%;
+    height: 100%;
+    display: block;
+    background-color: #ecf0f1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.player-name {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.player-class {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.player-alignement i {
+    color: #34495e;
+}
+
+.player-religion i {
+    color: #f1c40f;
+}
+
+.player-sexe i {
+    color: #9b59b6;
+}
+
+.player-hp {
+    position: absolute;
+    top: 0;
+    right: calc(20% + 9px);
+    top: 12px;
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.player-2 .player-avatar {
+    border: 3px solid #3498db;
+}
+
+.player-3 .player-avatar {
+    border: 3px solid #e74c3c;
+}
+
+.player-4 .player-avatar {
+    border: 3px solid #f1c40f;
+}
+
+.player-5 .player-avatar {
+    border: 3px solid #9b59b6;
+}
+
+.player-2 .player-name {
+    color: #3498db;
+}
+
+.player-3 .player-name {
+    color: #e74c3c;
+}
+
+.player-4 .player-name {
+    color: #f1c40f;
+}
+
+.player-5 .player-name {
+    color: #9b59b6;
+}
+
+.bloc-de {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bloc-de > div {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.15);
+}
+
+.bloc-de input, .bloc-de select {
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    width: 40px;
+}
+
+.bloc-de > div img {
+    margin-right: 5px;
+}
+
+.btn-de {
+    min-height: 40px;
+}
+
+input.call-result-de {
+    border: none;
+    background-color: #fff;
+    font-weight: 900;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #219452;
+}
